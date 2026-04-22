@@ -22,7 +22,7 @@ function getRequiredValue(key: RequiredKey): string {
 }
 
 export const env = {
-  port: Number(getRequiredValue("PORT")),
+  port: Number(getRequiredValue("PORT")) || 8080,
   postgresUrl: getRequiredValue("POSTGRES_URL"),
   mongoUrl: getRequiredValue("MONGO_URL"),
   mongoDbName: getRequiredValue("MONGO_DB_NAME"),
