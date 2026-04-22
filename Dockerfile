@@ -1,6 +1,7 @@
 # syntax=docker/dockerfile:1
 
 FROM node:18
+EXPOSE 8080
 
 WORKDIR /app
 
